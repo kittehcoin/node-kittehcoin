@@ -1,6 +1,6 @@
 # A Node.js KittehCoin Client!
 
-![KittehCoin](node-kittehcoin img here)
+![KittehCoin](https://raw.githubusercontent.com/trakout/node-kittehcoin/master/node-kittehcoin.png)
 
 node-kittehcoin is a Kittehcoin client for Node.js. It is a fork of the excellent Kapitalize Bitcoin Client (now removed from GitHub) intended for use with Kittehcoin. The purpose of this repository is:
 
