@@ -538,7 +538,7 @@ nodunit test/test-node-kittehcoin.js
 
 ## Donation and Bounties
 
-[Kittehcoin](http://www.kittehcoin.com) donation address is KRGZtuQuTUGSrGkEVFwF5TtnAeoWqj7SsE
+[Kittehcoin](http://www.kittehcoin.com) donation address is KTiU2iYZyykHG9EBbYZ85ygpWNReXtZbFm
 
 Join the conversation on [Kittehcoin Bounties!] (http://www.reddit.com/r/kittehcoin/comments/1yl3x0/what_do_you_think_we_should_be_offering_bounties/)
 
