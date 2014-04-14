@@ -1,0 +1,16 @@
+{
+    "name": "node-kittehcoin",
+    "version": "0.3.7",
+    "description": "KittehCoin client",
+    "keywords": ["kittehcoin"],
+    "repository": "git://github.com/trakout/node-kittehcoin.git",
+    "author": "Travis Nischuk <trakout@gmail.com>",
+    "main": "lib/kittehcoin.js",
+    "engines": { "node": ">= 0.4.0" },
+    "devDependencies": {
+        "nodeunit": "*"
+    },
+    "scripts": {
+        "preinstall": "npm i -g nodeunit"
+    }
+}
