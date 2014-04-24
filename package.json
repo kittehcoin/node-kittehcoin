@@ -1,12 +1,17 @@
 {
-    "name": "node-kittehcoin",
-    "version": "0.3.7",
-    "description": "KittehCoin client",
-    "keywords": ["kittehcoin"],
+    "name": "kittehcoin",
+    "version": "0.3.8",
+    "description": "KittehCoin Client",
+    "keywords": ["kittehcoin, kittehcoind"],
     "repository": "git://github.com/trakout/node-kittehcoin.git",
     "author": "Travis Nischuk <trakout@gmail.com>",
+    "bugs": { 
+                "url" : "http://github.com/trakout/tipkitteh/issues", 
+                "email" : "trakout@gmail.com"
+            },
+    "license" : "MIT",
     "main": "lib/kittehcoin.js",
-    "engines": { "node": ">= 0.4.0" },
+    "engines": { "node": ">= 0.10.26" },
     "devDependencies": {
         "nodeunit": "*"
     },

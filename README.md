@@ -2,7 +2,7 @@
 
 ![KittehCoin](https://raw.githubusercontent.com/trakout/node-kittehcoin/master/node-kittehcoin.png)
 
-node-kittehcoin is a Kittehcoin client for Node.js. It is a fork of the excellent Kapitalize Bitcoin Client (now removed from GitHub) intended for use with Kittehcoin. The purpose of this repository is:
+node-kittehcoin is a Kittehcoin client for Node.js. It is a fork of the [node-dogecoin client](https://github.com/countable/node-dogecoin), which is a fork of the excellent Kapitalize Bitcoin Client (now removed from GitHub) intended for use with Kittehcoin. The purpose of this repository is:
 
 * Provide a one-stop resource for the Node.js developer to get started with Kittehcoin integration.
 * Prevent would-be Kittehcoin web developers worrying whether a Bitcoin client will work out of the box.
@@ -11,7 +11,7 @@ node-kittehcoin is a Kittehcoin client for Node.js. It is a fork of the excellen
 
 ## Dependencies
 
-You'll need a running instance of [kittehcoind](https://github.com/kittehcoin/kittehcoin) to connect with. If you're running Debian/Ubuntu, feel free to ask for help at the forums! http://kittehcoin.info/forums/
+You'll need a running instance of [kittehcoind](https://github.com/kittehcoin/kittehcoin) to connect with. If you're running Debian/Ubuntu, the best guide currently out there is in [litecoind documentation](https://litecoin.info/Compiling_the_Litecoin_daemon_from_source_on_Debian). Be sure to actually install kittehcoind, not litecoind ;). Feel free to ask for help at the forums: http://kittehcoin.info/forums/
 
 Then, install the node-kittehcoin NPM package.
 
@@ -34,7 +34,7 @@ kittehcoin.getDifficulty(function() {
 
 ## Chaining
 
-Pretty much everything is chainable.
+Nearly verything is chainable.
 
 ```js
 var kittehcoin = require('node-kittehcoin')()
@@ -448,14 +448,14 @@ var kittehcoin = require('kittehcoin')({
 })
 
 kittehcoin.set('pass', 'somn')
-kittehcoin.set({port:22555})
+kittehcoin.set({port:22566})
 
 ```
 
 Available options and default values:
 
 + host *localhost*
-+ port *22555*
++ port *22566*
 + user
 + pass
 + passphrasecallback
@@ -538,7 +538,7 @@ nodunit test/test-node-kittehcoin.js
 
 ## Donation and Bounties
 
-[Kittehcoin](http://www.kittehcoin.com) donation address is KTiU2iYZyykHG9EBbYZ85ygpWNReXtZbFm
+The [Kittehcoin](http://www.kittehcoin.com) donation address is KTiU2iYZyykHG9EBbYZ85ygpWNReXtZbFm
 
 Join the conversation on [Kittehcoin Bounties!] (http://www.reddit.com/r/kittehcoin/comments/1yl3x0/what_do_you_think_we_should_be_offering_bounties/)
 
