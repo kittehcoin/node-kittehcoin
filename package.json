@@ -11,7 +11,7 @@
             },
     "license" : "MIT",
     "main": "lib/kittehcoin.js",
-    "engines": { "node": ">= 0.10.26" },
+    "engines": { "node": ">= 0.10.25" },
     "devDependencies": {
         "nodeunit": "*"
     },
