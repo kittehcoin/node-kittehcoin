@@ -3,7 +3,7 @@ var fs = require('fs'),
 
 var config = {
     rpchost: "127.0.0.1",
-    rpcport: 44555,
+    rpcport: 22565,
     rpcuser: "testnet_user",
     rpcpassword: "testnet_pass"
 };
@@ -94,7 +94,7 @@ exports.commands_noAuth = {
 		  if (err) {
 		    console.error('Failed to fetch balance', err.message);
 		  }else {
-		  	console.log('DOGE balance is', balance);
+		  	console.log('MEOW balance is', balance);
 			}
 		  test.done();
 		});
@@ -116,7 +116,7 @@ exports.commands_noAuth = {
 		var amount= 0.0001;
 		//kittehcoin.setAccount()
 		sendfrom("testnet_user", kittehcoin.getaccountaddress('testnet_user'),amount, function(err,addr){
-			test.equal(getreceivedbyaccount('testnet_user', amount);
+			test.equal(getreceivedbyaccount('testnet_user', amount));
 			test.equal( getreceivedbyaddress( kittehcoin.getaccountaddress('testnet_user') ), amount);
 			test.done();
 

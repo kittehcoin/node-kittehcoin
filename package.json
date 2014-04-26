@@ -6,7 +6,7 @@
     "repository": "git://github.com/trakout/node-kittehcoin.git",
     "author": "Travis Nischuk <trakout@gmail.com>",
     "bugs": { 
-                "url" : "http://github.com/trakout/tipkitteh/issues", 
+                "url" : "http://github.com/trakout/node-kittehcoin/issues", 
                 "email" : "trakout@gmail.com"
             },
     "license" : "MIT",
