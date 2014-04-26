@@ -99,10 +99,6 @@ exports.commands_noAuth = {
 		  test.done();
 		});
 	},
-	getBalance: function(test){
-
-	},
-
 	getGenerate: function(test){
 		test.expect(2);
 		kittehcoin.setGenerate(true,1);	
@@ -121,21 +117,13 @@ exports.commands_noAuth = {
 			test.done();
 
 		});
-
-
-
-	}
-
-	
+	}	
 }
 
 //all api commands that need .auth()
 exports.commands_Auth = {		
-	
 	setUp: function () {
 		kittehcoin.auth('testnet_user', 'testnet_pass');
 	}
-
-	
 }
 */
