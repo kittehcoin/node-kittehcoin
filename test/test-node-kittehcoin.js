@@ -43,7 +43,7 @@ exports.set = function (test) {
 
 	var new_options = {
       host: '133.7.7.7',
-      port: 22556,
+      port: 22565,
       user: 'new_1337_^*)()',
       pass: '*&@#cra$%zy@',
       passphrasecallback: function () { return 1+1;},
@@ -79,7 +79,7 @@ exports.set = function (test) {
  * Either run kittehcoind directly or run kittehcoin-qt with the -server
  * command line option. Make sure you have a ~/.kittehcoin/kittehcoin.conf
  * with rpcuser and rpcpassword config values filled out. Note that
- * newer versions of kittehcoin (1.5 and above) don't allow identical
+ * newer versions of kittehcoin (1.5 and above) don't allow
  * your rpc username and password to be identical.
  *
  */

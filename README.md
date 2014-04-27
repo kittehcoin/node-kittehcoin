@@ -15,7 +15,7 @@ You'll need a running instance of [kittehcoind](https://github.com/kittehcoin/ki
 
 Then, install the node-kittehcoin NPM package.
 
-`npm install node-kittehcoin`
+`npm install kittehcoin`
 
 ## Examples
 
