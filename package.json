@@ -1,6 +1,6 @@
 {
     "name": "kittehcoin",
-    "version": "0.3.8",
+    "version": "0.3.9",
     "description": "KittehCoin Client",
     "keywords": ["kittehcoin, kittehcoind"],
     "repository": "git://github.com/trakout/node-kittehcoin.git",
@@ -14,8 +14,5 @@
     "engines": { "node": ">= 0.10.25" },
     "devDependencies": {
         "nodeunit": "*"
-    },
-    "scripts": {
-        "preinstall": "npm i -g nodeunit"
     }
 }
