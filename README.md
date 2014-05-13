@@ -22,7 +22,7 @@ Then, install the node-kittehcoin NPM package.
 Some code examples follow below, more complete examples to follow.
 
 ```js
-var kittehcoin = require('node-kittehcoin')()
+var kittehcoin = require('kittehcoin')()
 
 kittehcoin.auth('myusername', 'mypassword')
 
@@ -37,7 +37,7 @@ kittehcoin.getDifficulty(function() {
 Nearly verything is chainable.
 
 ```js
-var kittehcoin = require('node-kittehcoin')()
+var kittehcoin = require('kittehcoin')()
 
 kittehcoin
 .auth('MyUserName', 'mypassword')
@@ -466,7 +466,7 @@ Available options and default values:
 
 With an encryped wallet, any operation that accesses private keys requires a wallet unlock. A wallet is unlocked using the `walletpassphrase <passphrase> <timeout>` JSON-RPC method: the wallet will relock after `timeout` seconds.
 
-You may pass an optional function `passphrasecallback` to the `node-kittehcoin` initialization function to manage wallet unlocks. `passphrasecallback` should be a function accepting three arguments:
+You may pass an optional function `passphrasecallback` to the `kittehcoin` initialization function to manage wallet unlocks. `passphrasecallback` should be a function accepting three arguments:
 
     function(command, args, callback) {}
 
@@ -477,7 +477,7 @@ You may pass an optional function `passphrasecallback` to the `node-kittehcoin` 
 You may hard code your passphrase (not recommended) as follows:
 
 ```js
-var kittehcoin = require('node-kittehcoin')({
+var kittehcoin = require('kittehcoin')({
     passphrasecallback: function(command, args, callback) {
         callback(null, 'passphrase', 30);
     }
@@ -494,7 +494,7 @@ var rl = readline.createInterface({
   output: process.stdout
 })
 
-var kittehcoin = require('node-kittehcoin')({
+var kittehcoin = require('kittehcoin')({
   passphrasecallback: function(command, args, callback) {
     rl.question('Enter passphrase for "' + command + '" operation: ', function(passphrase) {
       if (passphrase) {
@@ -515,14 +515,14 @@ By default `kittehcoind` exposes its JSON-RPC interface via HTTP; that is, all R
     rpcsslcertificatechainfile=/etc/ssl/certs/kittehcoind.crt
     rpcsslprivatekeyfile=/etc/ssl/private/kittehcoind.pem
 
-In order to securely access an SSL encrypted JSON-RPC interface you need a copy of the self-signed certificate from the server: in this case `kittehcoind.crt`. Pass your self-signed certificate in the `ca` option and set `https: true` and node-kittehcoin is secured!
+In order to securely access an SSL encrypted JSON-RPC interface you need a copy of the self-signed certificate from the server: in this case `kittehcoind.crt`. Pass your self-signed certificate in the `ca` option and set `https: true` and kittehcoin is secured!
     
 ```js
 var fs = require('fs')
 
 var ca = fs.readFileSync('kittehcoind.crt')
 
-var kittehcoin = require('node-kittehcoin')({
+var kittehcoin = require('kittehcoin')({
   user: 'rpcusername',
   pass: 'rpcpassword',
   https: true,
